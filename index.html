@@ -258,9 +258,21 @@
                 <li><a href="#peer-review" class="hover:text-white transition-colors">Peer Review</a></li>
                 <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
             </ul>
-            <button class="md:hidden text-white"><i data-lucide="menu"></i></button>
+            <button id="mobile-menu-btn" class="md:hidden text-white"><i data-lucide="menu"></i></button>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[100] bg-amkDarkBlue/95 backdrop-blur-lg hidden flex-col items-center justify-center space-y-8 text-2xl font-bold text-white transition-all duration-300">
+        <button id="close-mobile-menu" class="absolute top-8 right-8 text-white"><i data-lucide="x" class="w-8 h-8"></i></button>
+        <a href="#home" class="mobile-nav-link hover:text-amkBlue transition-colors">Home</a>
+        <a href="#about" class="mobile-nav-link hover:text-amkBlue transition-colors">About Me</a>
+        <a href="#tech" class="mobile-nav-link hover:text-amkBlue transition-colors">Tech & Projects</a>
+        <a href="#vision" class="mobile-nav-link hover:text-amkBlue transition-colors">Vision</a>
+        <a href="javascript:void(0)" onclick="toggleQnaModal(); toggleMobileMenu();" class="mobile-nav-link hover:text-amkBlue transition-colors">Q&A</a>
+        <a href="#peer-review" class="mobile-nav-link hover:text-amkBlue transition-colors">Peer Review</a>
+        <a href="#contact" class="mobile-nav-link hover:text-amkBlue transition-colors">Contact</a>
+    </div>
 
     <!-- [Step 2] Home Section -->
     <section id="home"
@@ -2088,6 +2100,37 @@
             });
 
             // Attach click events
+            // Mobile Menu Logic
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMobileMenuBtn = document.getElementById('close-mobile-menu');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            function toggleMobileMenu() {
+                if (!mobileMenu) return;
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = 'auto';
+                }
+            }
+
+            if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+            if (closeMobileMenuBtn) closeMobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const targetId = link.getAttribute('href');
+                    if (targetId && targetId.startsWith('#') && targetId.length > 1) {
+                        e.preventDefault();
+                        showSection(targetId);
+                        toggleMobileMenu();
+                    }
+                });
+            });
+
             allAnchorLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
                     const targetId = link.getAttribute('href');
