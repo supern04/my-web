@@ -2062,7 +2062,9 @@
             
             function showSection(targetId) {
                 allSections.forEach(sec => {
-                    if ('#' + sec.id === targetId || (targetId === '#tech' && sec.id === 'projects')) {
+                    if ('#' + sec.id === targetId || 
+                        (targetId === '#tech' && sec.id === 'projects') ||
+                        (targetId === '#about' && sec.id === 'global')) {
                         sec.classList.remove('hidden');
                     } else {
                         sec.classList.add('hidden');
