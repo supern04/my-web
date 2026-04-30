@@ -37,7 +37,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Dancing+Script:wght@700&display=swap"
         rel="stylesheet">
 
     <!-- Lucide Icons -->
@@ -251,8 +251,8 @@
             </a>
             <ul class="hidden md:flex space-x-8 font-medium text-sm text-white/80" id="nav-links">
                 <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
-                <li><a href="#about" class="hover:text-white transition-colors">About Me</a></li>
                 <li><a href="#tech" class="hover:text-white transition-colors">Tech & Projects</a></li>
+                <li><a href="#about" class="hover:text-white transition-colors">About Me</a></li>
                 <li><a href="#vision" class="hover:text-white transition-colors">Vision</a></li>
                 <li><a href="javascript:void(0)" onclick="toggleQnaModal()" class="hover:text-white transition-colors">Q&A</a></li>
                 <li><a href="#peer-review" class="hover:text-white transition-colors">Peer Review</a></li>
@@ -266,8 +266,8 @@
     <div id="mobile-menu" class="fixed inset-0 z-[100] bg-amkDarkBlue/95 backdrop-blur-lg hidden flex-col items-center justify-center space-y-8 text-2xl font-bold text-white transition-all duration-300">
         <button id="close-mobile-menu" class="absolute top-8 right-8 text-white"><i data-lucide="x" class="w-8 h-8"></i></button>
         <a href="#home" class="mobile-nav-link hover:text-amkBlue transition-colors">Home</a>
-        <a href="#about" class="mobile-nav-link hover:text-amkBlue transition-colors">About Me</a>
         <a href="#tech" class="mobile-nav-link hover:text-amkBlue transition-colors">Tech & Projects</a>
+        <a href="#about" class="mobile-nav-link hover:text-amkBlue transition-colors">About Me</a>
         <a href="#vision" class="mobile-nav-link hover:text-amkBlue transition-colors">Vision</a>
         <a href="javascript:void(0)" onclick="toggleQnaModal(); toggleMobileMenu();" class="mobile-nav-link hover:text-amkBlue transition-colors">Q&A</a>
         <a href="#peer-review" class="mobile-nav-link hover:text-amkBlue transition-colors">Peer Review</a>
@@ -319,94 +319,6 @@
         </div>
     </section>
 
-    <!-- [Step 3] About Me Section -->
-    <section id="about" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16 reveal">
-                <span class="text-amkBlue font-bold tracking-wider uppercase text-sm">Growth & Character</span>
-                <h2 class="text-4xl font-display font-bold text-slate-900 mt-2">나의 스토리</h2>
-                <div class="w-16 h-1 bg-amkBlue mx-auto mt-4"></div>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16 reveal">
-                <div class="relative">
-                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-amkBlue/10 rounded-full blur-2xl"></div>
-                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-amkSilver/20 rounded-full blur-2xl"></div>
-                    <img src="profile_portrait.JPG" alt="Choung Seung-min Profile"
-                        class="relative rounded-3xl shadow-2xl border-4 border-white w-full max-w-lg mx-auto object-cover aspect-[4/5]">
-                </div>
-                <div>
-                    <span class="text-amkBlue font-bold tracking-wider uppercase text-sm">Profile</span>
-                    <h2 class="text-4xl font-display font-bold text-slate-900 mt-2">정승민 <span class="text-amkSilver">|
-                            Candidate for AMK CE</span></h2>
-                    <p class="text-slate-600 mt-6 leading-relaxed text-lg font-light">
-                        동양미래대학교 로봇소프트웨어과 출신으로 로봇 메커니즘과 하드웨어에 대한 깊은 이해를 갖추고 있습니다. 실수를 줄이려는 꼼꼼함과 어떤 실패 앞에서도 기죽지 않는 악착같은
-                        성격으로 AMK의 최첨단 반도체 장비 유지보수를 책임질 준비가 되어 있습니다.
-                    </p>
-                    <div class="mt-8 flex flex-wrap gap-4">
-                        <div
-                            class="flex items-center space-x-2 bg-slate-100 py-2 px-4 rounded-full text-sm font-semibold text-slate-700">
-                            <i data-lucide="cake" class="w-4 h-4 text-amkBlue"></i> <span>2004.10.19</span>
-                        </div>
-                        <div
-                            class="flex items-center space-x-2 bg-slate-100 py-2 px-4 rounded-full text-sm font-semibold text-slate-700">
-                            <i data-lucide="graduation-cap" class="w-4 h-4 text-amkBlue"></i> <span>로봇소프트웨어과</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1: Stamina -->
-                <div
-                    class="reveal bg-slate-50 border border-slate-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 group">
-                    <div
-                        class="w-14 h-14 rounded-xl bg-blue-50 text-amkBlue flex items-center justify-center mb-6 group-hover:amk-gradient group-hover:text-white transition-all">
-                        <i data-lucide="dumbbell" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">지치지 않는 체력과 팀워크</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6 font-light">
-                        월정초등학교 시절 축구부 및 대표 티볼부 출신으로 기본기를 다졌습니다. 이후 명륜진사갈비 아르바이트를 거치며 강인한 체력과 현장 적응력을 증명했습니다. 방진복을 입고 장시간
-                        FAB 내에서 근무해야 하는 CE 직무에 완벽히 적응할 수 있는 엔진을 갖추고 있습니다.
-                    </p>
-                    <div class="text-xs font-semibold text-amkBlue bg-blue-50 py-1 px-3 rounded-full inline-block">FAB
-                        Ready</div>
-                </div>
-
-                <!-- Card 2: Leadership -->
-                <div class="reveal bg-slate-50 border border-slate-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 group"
-                    style="transition-delay: 100ms">
-                    <div
-                        class="w-14 h-14 rounded-xl bg-indigo-50 text-amkBlue flex items-center justify-center mb-6 group-hover:amk-gradient group-hover:text-white transition-all">
-                        <i data-lucide="users" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">소통과 책임감의 리더십</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6 font-light">
-                        17사단 3경비단 분대장 역임(2024.02~2025.08). 위기 상황에서도 부대원들을 이끌고 솔선수범하여 문제를 해결하는 현장 지휘 및 협업 능력을 배양했습니다.
-                        팀원간의 원활한 소통은 빠른 장비 복구의 핵심입니다.
-                    </p>
-                    <div class="text-xs font-semibold text-amkBlue bg-indigo-50 py-1 px-3 rounded-full inline-block">
-                        Squad Leader</div>
-                </div>
-
-                <!-- Card 3: Persistence -->
-                <div class="reveal bg-slate-50 border border-slate-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 group"
-                    style="transition-delay: 200ms">
-                    <div
-                        class="w-14 h-14 rounded-xl bg-slate-200 text-amkBlue flex items-center justify-center mb-6 group-hover:amk-gradient group-hover:text-white transition-all">
-                        <i data-lucide="target" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">꼼꼼함과 악착같음</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6 font-light">
-                        실수를 줄이려는 꼼꼼함을 최우선으로 하며, 문제 발생 시 실패를 무서워하지 않고 목표를 이룰 때까지 다시 시도하는 집요한 성격입니다. 이는 변수가 많은 장비 트러블슈팅
-                        현장에서 원인을 끝까지 추적해내는 핵심 역량이 될 것입니다.
-                    </p>
-                    <div class="text-xs font-semibold text-amkBlue bg-slate-200 py-1 px-3 rounded-full inline-block">
-                        Troubleshooter</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- [Step 4] Tech Skills Section -->
     <section id="tech" class="py-24 bg-slate-50 relative overflow-hidden">
@@ -662,6 +574,95 @@
             </div>
         </section>
 
+    <!-- [Step 3] About Me Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <span class="text-amkBlue font-bold tracking-wider uppercase text-sm">Growth & Character</span>
+                <h2 class="text-4xl font-display font-bold text-slate-900 mt-2">나의 스토리</h2>
+                <div class="w-16 h-1 bg-amkBlue mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16 reveal">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-amkBlue/10 rounded-full blur-2xl"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-amkSilver/20 rounded-full blur-2xl"></div>
+                    <img src="profile_portrait.JPG" alt="Choung Seung-min Profile"
+                        class="relative rounded-3xl shadow-2xl border-4 border-white w-full max-w-lg mx-auto object-cover aspect-[4/5]">
+                </div>
+                <div>
+                    <span class="text-amkBlue font-bold tracking-wider uppercase text-sm">Profile</span>
+                    <h2 class="text-4xl font-display font-bold text-slate-900 mt-2">정승민 <span class="text-amkSilver">|
+                            Candidate for AMK CE</span></h2>
+                    <p class="text-slate-600 mt-6 leading-relaxed text-lg font-light">
+                        동양미래대학교 로봇소프트웨어과 출신으로 로봇 메커니즘과 하드웨어에 대한 깊은 이해를 갖추고 있습니다. 실수를 줄이려는 꼼꼼함과 어떤 실패 앞에서도 기죽지 않는 악착같은
+                        성격으로 AMK의 최첨단 반도체 장비 유지보수를 책임질 준비가 되어 있습니다.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <div
+                            class="flex items-center space-x-2 bg-slate-100 py-2 px-4 rounded-full text-sm font-semibold text-slate-700">
+                            <i data-lucide="cake" class="w-4 h-4 text-amkBlue"></i> <span>2004.10.19</span>
+                        </div>
+                        <div
+                            class="flex items-center space-x-2 bg-slate-100 py-2 px-4 rounded-full text-sm font-semibold text-slate-700">
+                            <i data-lucide="graduation-cap" class="w-4 h-4 text-amkBlue"></i> <span>로봇소프트웨어과</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Stamina -->
+                <div
+                    class="reveal bg-slate-50 border border-slate-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 group">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-blue-50 text-amkBlue flex items-center justify-center mb-6 group-hover:amk-gradient group-hover:text-white transition-all">
+                        <i data-lucide="dumbbell" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">지치지 않는 체력과 팀워크</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6 font-light">
+                        월정초등학교 시절 축구부 및 대표 티볼부 출신으로 기본기를 다졌습니다. 이후 명륜진사갈비 아르바이트를 거치며 강인한 체력과 현장 적응력을 증명했습니다. 방진복을 입고 장시간
+                        FAB 내에서 근무해야 하는 CE 직무에 완벽히 적응할 수 있는 엔진을 갖추고 있습니다.
+                    </p>
+                    <div class="text-xs font-semibold text-amkBlue bg-blue-50 py-1 px-3 rounded-full inline-block">FAB
+                        Ready</div>
+                </div>
+
+                <!-- Card 2: Leadership -->
+                <div class="reveal bg-slate-50 border border-slate-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 group"
+                    style="transition-delay: 100ms">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-indigo-50 text-amkBlue flex items-center justify-center mb-6 group-hover:amk-gradient group-hover:text-white transition-all">
+                        <i data-lucide="users" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">소통과 책임감의 리더십</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6 font-light">
+                        17사단 3경비단 분대장 역임(2024.02~2025.08). 위기 상황에서도 부대원들을 이끌고 솔선수범하여 문제를 해결하는 현장 지휘 및 협업 능력을 배양했습니다.
+                        팀원간의 원활한 소통은 빠른 장비 복구의 핵심입니다.
+                    </p>
+                    <div class="text-xs font-semibold text-amkBlue bg-indigo-50 py-1 px-3 rounded-full inline-block">
+                        Squad Leader</div>
+                </div>
+
+                <!-- Card 3: Persistence -->
+                <div class="reveal bg-slate-50 border border-slate-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 group"
+                    style="transition-delay: 200ms">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-slate-200 text-amkBlue flex items-center justify-center mb-6 group-hover:amk-gradient group-hover:text-white transition-all">
+                        <i data-lucide="target" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">꼼꼼함과 악착같음</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6 font-light">
+                        실수를 줄이려는 꼼꼼함을 최우선으로 하며, 문제 발생 시 실패를 무서워하지 않고 목표를 이룰 때까지 다시 시도하는 집요한 성격입니다. 이는 변수가 많은 장비 트러블슈팅
+                        현장에서 원인을 끝까지 추적해내는 핵심 역량이 될 것입니다.
+                    </p>
+                    <div class="text-xs font-semibold text-amkBlue bg-slate-200 py-1 px-3 rounded-full inline-block">
+                        Troubleshooter</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
         <!-- [Step 4.7] Global Experience Section -->
         <section id="global" class="py-24 bg-slate-50 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -674,69 +675,67 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
                     <!-- Osaka -->
                     <div class="reveal group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                        <div class="h-80 overflow-hidden relative bg-slate-200">
+                        <div class="h-48 overflow-hidden relative bg-slate-200">
                             <img src="osaka1.JPG" alt="Osaka 1" class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-700 brightness-90">
                             <img src="osaka2.jpeg" alt="Osaka 2" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-700 brightness-90 group-hover:scale-110">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                                <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-300 mb-1">Experience 01</p>
-                                <h4 class="text-2xl font-bold">일본 (오사카)</h4>
+                            <div class="absolute bottom-4 left-4 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                                <p class="text-[8px] font-bold uppercase tracking-[0.2em] text-blue-300 mb-1">Experience 01</p>
+                                <h4 class="text-lg font-bold">일본 (오사카)</h4>
                                 <p class="text-xs text-slate-300 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">문화적 다양성 이해 및 새로운 환경 적응력 함양</p>
                             </div>
                         </div>
                     </div>
                     <!-- Taiwan -->
                     <div class="reveal group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" style="transition-delay: 100ms">
-                        <div class="h-80 overflow-hidden relative bg-slate-200">
+                        <div class="h-48 overflow-hidden relative bg-slate-200">
                             <img src="taiwan1.jpeg" alt="Taiwan 1" class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-700 brightness-90">
                             <img src="taiwan2.JPG" alt="Taiwan 2" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-700 brightness-90 group-hover:scale-110">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                                <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-300 mb-1">Experience 02</p>
-                                <h4 class="text-2xl font-bold">대만</h4>
+                            <div class="absolute bottom-4 left-4 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                                <p class="text-[8px] font-bold uppercase tracking-[0.2em] text-blue-300 mb-1">Experience 02</p>
+                                <h4 class="text-lg font-bold">대만</h4>
                                 <p class="text-xs text-slate-300 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">글로벌 에티켓 준수 및 소통 중심의 협업 역량</p>
                             </div>
                         </div>
                     </div>
                     <!-- Vietnam -->
                     <div class="reveal group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" style="transition-delay: 200ms">
-                        <div class="h-80 overflow-hidden relative bg-slate-200">
+                        <div class="h-48 overflow-hidden relative bg-slate-200">
                             <img src="danang.jpeg" alt="Da Nang" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-90">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                                <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-300 mb-1">Experience 03</p>
-                                <h4 class="text-2xl font-bold">베트남 (다낭)</h4>
+                            <div class="absolute bottom-4 left-4 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                                <p class="text-[8px] font-bold uppercase tracking-[0.2em] text-blue-300 mb-1">Experience 03</p>
+                                <h4 class="text-lg font-bold">베트남 (다낭)</h4>
                                 <p class="text-xs text-slate-300 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">낯선 도전에 대한 열정 및 글로벌 트렌드 경험</p>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
                     <!-- Philippines -->
                     <div class="reveal group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                        <div class="h-80 overflow-hidden relative bg-slate-200">
+                        <div class="h-48 overflow-hidden relative bg-slate-200">
                             <img src="sebu.JPG" alt="Cebu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-90">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                                <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-300 mb-1">Experience 04</p>
-                                <h4 class="text-2xl font-bold">필리핀 (세부)</h4>
+                            <div class="absolute bottom-4 left-4 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                                <p class="text-[8px] font-bold uppercase tracking-[0.2em] text-blue-300 mb-1">Experience 04</p>
+                                <h4 class="text-lg font-bold">필리핀 (세부)</h4>
                                 <p class="text-xs text-slate-300 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">다문화 소통 및 팀워크 가치 재발견</p>
                             </div>
                         </div>
                     </div>
                     <!-- Jeju -->
                     <div class="reveal group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" style="transition-delay: 100ms">
-                        <div class="h-80 overflow-hidden relative bg-slate-200">
+                        <div class="h-48 overflow-hidden relative bg-slate-200">
                             <img src="jeju1.jpeg" alt="Jeju 1" class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-700 brightness-90">
                             <img src="jeju2.jpeg" alt="Jeju 2" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-700 brightness-90 group-hover:scale-110">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                                <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-300 mb-1">Experience 05</p>
-                                <h4 class="text-2xl font-bold">제주도</h4>
+                            <div class="absolute bottom-4 left-4 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                                <p class="text-[8px] font-bold uppercase tracking-[0.2em] text-blue-300 mb-1">Experience 05</p>
+                                <h4 class="text-lg font-bold">제주도</h4>
                                 <p class="text-xs text-slate-300 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">국내 명소 탐방을 통한 힐링과 재충전, 도전 정신 고취</p>
                             </div>
                         </div>
@@ -1127,7 +1126,7 @@
                         "긴 시간 제 포트폴리오를 검토해 주셔서 진심으로 감사합니다.<br>어플라이드 머티어리얼즈 현장에서 가장 먼저 땀 흘리는 든든한 파트너가 되겠습니다."
                     </p>
                     <div class="flex flex-col items-center">
-                        <span class="text-3xl md:text-4xl text-slate-800" style="font-family: 'Brush Script MT', cursive; transform: rotate(-5deg);">Seung-min Choung</span>
+                        <span class="text-4xl md:text-5xl text-slate-800" style="font-family: 'Dancing Script', cursive; transform: rotate(-5deg);">Seung-min Choung</span>
                         <div class="w-32 h-[1px] bg-slate-300 mt-4 mb-2"></div>
                         <span class="text-sm text-slate-500 font-bold uppercase tracking-widest">AMK CE Applicant</span>
                     </div>
