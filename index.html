@@ -1490,6 +1490,10 @@
                 }
             };
 
+            document.getElementById('qna-close')?.addEventListener('click', window.toggleQnaModal);
+            document.getElementById('qna-backdrop')?.addEventListener('click', window.toggleQnaModal);
+
+
             window.toggleQnaForm = () => {
                 const formContainer = document.getElementById('qna-form-container');
                 formContainer.classList.toggle('hidden');
